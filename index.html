@@ -40,20 +40,19 @@
       <div class="header-adress">
         <ul>
           <li>
-            <a class="clients-item" href="mailto:info@devstudio.com"
-              ><svg class="clients-item-svg" width="16px" height="12px">
+            <a class="clients-item" href="mailto:info@devstudio.com"><svg class="clients-item-svg" width="16px"
+                height="12px">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
-                info@devstudio.com
+              info@devstudio.com
             </a>
           </li>
           <li>
-            <a class="clients-item" href="tel:48111111111"
-              ><svg class="clients-item-svg" width="10px" height="16px">
+            <a class="clients-item" href="tel:48111111111"><svg class="clients-item-svg" width="10px" height="16px">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
-                +48 111 111 111
-              </a>
+              +48 111 111 111
+            </a>
           </li>
         </ul>
       </div>
@@ -132,17 +131,23 @@
         <h2 class="h2">Czym się zajmujemy</h2>
         <ul class="portfolio card-index">
           <div class="thumb">
-          <li class="item">
-            <img src="images/index-picture/img.jpg" alt="computer" width="350" height="300" />
-          </li><p class="label">APLIKACJE KOMPUTEROWE</p></div>
+            <li class="item">
+              <img src="images/index-picture/img.jpg" alt="computer" width="350" height="300" />
+            </li>
+            <p class="label">APLIKACJE KOMPUTEROWE</p>
+          </div>
           <div class="thumb">
-          <li class="item">
-            <img src="images/index-picture/img3.jpg" alt="mobile" width="350" height="300" />
-          </li><p class="label">APLIKACJE MOBILNE</p></div>
+            <li class="item">
+              <img src="images/index-picture/img3.jpg" alt="mobile" width="350" height="300" />
+            </li>
+            <p class="label">APLIKACJE MOBILNE</p>
+          </div>
           <div class="thumb">
-          <li class="item">
-            <img src="images/index-picture/img1.jpg" alt="tablet" width="350" height="300" />
-          </li><p class="label">ROZWIĄZANIA GRAFICZNE</p></div>
+            <li class="item">
+              <img src="images/index-picture/img1.jpg" alt="tablet" width="350" height="300" />
+            </li>
+            <p class="label">ROZWIĄZANIA GRAFICZNE</p>
+          </div>
         </ul>
       </div>
     </section>
@@ -251,9 +256,9 @@
                   </svg>
                 </a>
                 <a class="background-team-svg" href="#">
-                   <svg  class="team-svg-icon" width="20px" height="20px">
-                      <use href="./images/icons.svg#icon-linkedin-1"></use>
-                    </svg>
+                  <svg class="team-svg-icon" width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
                 </a>
 
 
@@ -362,13 +367,63 @@
 
         </div>
       </div>
+      <div class="footer-block2">
+        <h4 class="newsletter-block">ZAPISZ SIĘ DO NEWSLETTERRA</h4>
+        <ul>
+          <li>
+        <form >
+          <textarea 
+          name="reviev" 
+          placeholder="E-mail"
+          >
+        </textarea>
+          
+        </form>
+      </li>
+      <li>
+        <button class="newsletter-button" type="submit">Zapisz się</button>
+      </li>
+      </ul>
+      </div>
     </div>
 
   </footer>
-<div class="backdrop is-hidden" data-modal>
-  <div class="modal">
-    <button class="btn-close" data-modal-close><a>X</a></button>
-  </div></div>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <h3>Zostaw swoje dane w formularzu poniżej</h3>
+      <p>Imię</p>
+      <form>
+        <textarea name="review" placeholder=""></textarea>
+        
+      </form>
+      <p>Telefon</p>
+      <form>
+        <textarea name="review" placeholder=""></textarea>
+        
+      </form>
+      <p>Email</p>
+      <form>
+        <textarea name="review" placeholder=""></textarea>
+        
+      </form>
+      <p>Komentarz</p>
+      <form>
+        <textarea class="textarea" name="review" placeholder="Wprowadź text"></textarea></form>
+       <form>
+        <input
+        id="Regulamin"
+        type="checkbox"
+        name="RegulaminCheckbox"
+        value="Regulamin i polityka prywatności"
+        nonchecked
+      />
+      <label for="Regulamin">Oświadczam iż akceptuję <a class="modal-reg" href="#">Regulamin</a> i <a class="modal-reg" href="#">politykę prywatności</a></label>
+        
+      </form>
+      <Button class="button-modal">Wyślij</Button>
+      <button class="btn-close" data-modal-close><a>X</a></button>
+    </div>
+  </div>
 
   <script src="modal.js"></script>
 </body>
