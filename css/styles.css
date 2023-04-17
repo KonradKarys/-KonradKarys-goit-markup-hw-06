@@ -597,8 +597,8 @@ footer {
   height: 80px;
 }
 .footer-block2 {
-  display: inline-block;
-  background-color: #2f303a;
+  display:block;
+  padding-left: 78px;
 }
 .footer-block2 ul {
   list-style-type: none;
@@ -690,7 +690,7 @@ address li {
 .icons-footer {
   display: flex;
 }
-.newsletterr-button {
+.newsletter-button {
   display: flex;
   width: 200px;
   height: 50px;
@@ -702,20 +702,26 @@ address li {
   size: 16px;
   color: #ffffff;
 }
+.svg-icon-send{
+  fill:#ffffff;
+  width: 24px;
+  height: 24px;
+}
 .footer-block2 h4 {
   size: 14px;
   color: #ffffff;
   padding-left: 78px;
 }
-.footer textarea {
-  resize: none;
+.newsletter-label input{
   width: 358px;
   height: 50px;
   background-color: rgba(47, 48, 58, 1);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 15px 0 15px 16px;
   font-size: 16px;
   font-weight: 400;
+}
+.newsletter-label{
+  padding-right: 15px;
 }
 
 /*modal*/
@@ -734,6 +740,7 @@ address li {
 }
 .btn-close:hover a {
   color: #212121;
+  transform: translateX(50%);
 }
 .backdrop {
   position: fixed;
@@ -825,6 +832,7 @@ label {
   resize: none;
   padding: 12px 0 0 16px;
 }
+
 .button-modal {
   display: block;
   margin: 30px auto;
