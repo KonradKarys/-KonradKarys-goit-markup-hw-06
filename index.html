@@ -391,34 +391,34 @@
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <h3>Zostaw swoje dane w formularzu poniżej</h3>
-      <p>Imię</p>
+      
       <form>
-        <textarea name="review" placeholder=""></textarea>
-        
-      </form>
-      <p>Telefon</p>
-      <form>
-        <textarea name="review" placeholder=""></textarea>
-        
-      </form>
-      <p>Email</p>
-      <form>
-        <textarea name="review" placeholder=""></textarea>
-        
-      </form>
-      <p>Komentarz</p>
-      <form>
-        <textarea class="textarea" name="review" placeholder="Wprowadź text"></textarea></form>
-       <form>
-        <input
-        id="Regulamin"
-        type="checkbox"
-        name="RegulaminCheckbox"
-        value="Regulamin i polityka prywatności"
-        nonchecked
-      />
-      <label for="Regulamin">Oświadczam iż akceptuję <a class="modal-reg" href="#">Regulamin</a> i <a class="modal-reg" href="#">politykę prywatności</a></label>
-        
+        <label class="modal-color">
+          Imię
+        <input type="Name" name="Name"/>
+      </label>
+        <label class="modal-color">
+          Telefon
+        <input type="Telefon" name="Telefon"/>
+      </label>
+        <label class="modal-color svg-mail">
+          E-mail
+        <input type="E-mail" name="E-mail"/>
+      </label>
+    
+      <label class="modal-color">
+        Komentarz
+        <textarea class="textarea" name="review" placeholder="Wprowadź text"></textarea>
+      </label>
+      <label class="checkbox">
+      <input
+      type="checkbox"
+      name="RegulaminCheckbox"
+      value="Regulamin i polityka prywatności"
+      nonchecked
+    />
+      Oświadczam iż akceptuję <a class="modal-reg" href="#">Regulamin</a> i <a class="modal-reg" href="#">politykę prywatności</a></label>
+    
       </form>
       <Button class="button-modal">Wyślij</Button>
       <button class="btn-close" data-modal-close><a>X</a></button>
