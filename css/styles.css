@@ -586,10 +586,13 @@ footer {
   padding: 60px 0;
   height: 252px;
   width: 100%;
+  display: flex;
 }
 
 .footer-block {
   display: inline-block;
+  width: 246px;
+  height: 81px;
 }
 .footer-block1 {
   display: inline-block;
@@ -598,6 +601,9 @@ footer {
 }
 .footer-block2 {
   display:block;
+  align-items: start;
+  width: 570px;
+  height: 86px;
   padding-left: 78px;
 }
 .footer-block2 ul {
@@ -706,8 +712,9 @@ address li {
   fill:#ffffff;
   width: 24px;
   height: 24px;
+  justify-content: center;
 }
-.footer-block2 h4 {
+.newsletter-block{
   size: 14px;
   color: #ffffff;
   padding-left: 78px;
@@ -739,6 +746,10 @@ address li {
   height: 30px;
 }
 .btn-close:hover a {
+  color: #212121;
+  transform: translateX(50%);
+}
+.btn-close:focus a {
   color: #212121;
   transform: translateX(50%);
 }
@@ -807,14 +818,14 @@ form {
   display: flex;
   text-align:end;
 }
-.modal input:focus ,
+.modal input:focus 
 .modal input:hover 
 {
   border: 1px solid #2196f3;
   fill:#2196f3;
   transition:250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal textarea:focus ,
+.modal textarea:focus 
 .modal textarea:hover 
 {
   border: 1px solid #2196f3;
