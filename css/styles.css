@@ -589,23 +589,8 @@ footer {
   display: flex;
 }
 
-.footer-block {
-  display: inline-block;
-  width: 246px;
-  height: 81px;
-}
-.footer-block1 {
-  display: inline-block;
-  width: 206px;
-  height: 80px;
-}
-.footer-block2 {
-  display:block;
-  align-items: start;
-  width: 570px;
-  height: 86px;
-  padding-left: 78px;
-}
+
+
 .footer-block2 ul {
   list-style-type: none;
   display: flex;
@@ -713,11 +698,13 @@ address li {
   width: 24px;
   height: 24px;
   justify-content: center;
+  position: absolute;
 }
 .newsletter-block{
   size: 14px;
   color: #ffffff;
-  padding-left: 78px;
+  padding-bottom: 20px;
+  padding-left: 40px;
 }
 .newsletter-label input{
   width: 358px;
@@ -726,9 +713,14 @@ address li {
   border: 1px solid rgba(255, 255, 255, 0.3);
   font-size: 16px;
   font-weight: 400;
+  padding-left: 16px;
+}
+.footer-block2{
+  padding-bottom: 20px;
 }
 .newsletter-label{
   padding-right: 15px;
+  padding-bottom: 20px;
 }
 
 /*modal*/
@@ -746,13 +738,10 @@ address li {
   height: 30px;
 }
 .btn-close:hover a {
-  color: #212121;
+  color: blue;
   transform: translateX(50%);
 }
-.btn-close:focus a {
-  color: #212121;
-  transform: translateX(50%);
-}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -788,6 +777,7 @@ address li {
 .overlay__function {
   color: #fff;
   height: 100%;
+  transform: 100%;
 }
 form {
   padding-left: 40px;
@@ -813,10 +803,27 @@ form {
   padding: 10px 0 4px 0;
  
 }
-
+.svg-icon-black-person{
+  fill:#212121;
+  position:absolute;
+}
+.svg-icon-tel{
+  fill:#212121;
+  position:absolute;
+}
+.svg-icon-Email{
+  fill:#212121;
+  position:absolute;
+}
+.svg-icon-bird{
+  fill:#ffffff
+}
+.checkbox:checked~.svg-icon-bird{
+  fill: #fff;
+  background-color: #2196f3;
+}
 .checkbox {
   display: flex;
-  text-align:end;
 }
 .modal input:focus 
 .modal input:hover 
