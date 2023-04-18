@@ -130,24 +130,24 @@
       <div class="container">
         <h2 class="h2">Czym się zajmujemy</h2>
         <ul class="portfolio card-index">
-          <div class="thumb">
+          <span class="thumb">
             <li class="item">
               <img src="images/index-picture/img.jpg" alt="computer" width="350" height="300" />
             </li>
             <p class="label">APLIKACJE KOMPUTEROWE</p>
-          </div>
-          <div class="thumb">
+          </span>
+          <span class="thumb">
             <li class="item">
               <img src="images/index-picture/img3.jpg" alt="mobile" width="350" height="300" />
             </li>
             <p class="label">APLIKACJE MOBILNE</p>
-          </div>
-          <div class="thumb">
+          </span>
+          <span class="thumb">
             <li class="item">
               <img src="images/index-picture/img1.jpg" alt="tablet" width="350" height="300" />
             </li>
             <p class="label">ROZWIĄZANIA GRAFICZNE</p>
-          </div>
+          </span>
         </ul>
       </div>
     </section>
@@ -178,6 +178,7 @@
                     <use href="./images/icons.svg#icon-linkedin-1"></use>
                   </svg>
                 </a>
+              </div>
             </li>
           </div>
           <div class="tile">
@@ -185,9 +186,7 @@
               <img src="images/index-picture/Iwona.jpg" alt="John_Doe2" width="270" height="260" />
               <h3>John Doe</h3>
               <p>Frontend Developer</p>
-
               <div class="team-svg">
-
                 <a class="background-team-svg" href="#"><svg class="team-svg-icon" width="20px" height="20px">
                     <use href="./images/icons.svg#icon-instagram-2"></use>
                   </svg></a>
@@ -371,20 +370,20 @@
         <h4 class="newsletter-block">ZAPISZ SIĘ DO NEWSLETTERRA</h4>
         <ul>
           <li>
-        <form class="newsletter-label">
-          <label for="reviev">
-          <input 
-          name="reviev" 
-          placeholder="E-mail"
-          >
-        </input>
-      </label>
-        </form>
-      </li>
-      <li>
-        <button class="newsletter-button" type="submit">Zapisz się<svg class="svg-icon-send" width="24px" height="24px"><use href="./images/icons.svg#icon-send"></use> </svg></button>
-      </li>
-      </ul>
+            <form class="newsletter-label">
+              <label for="reviev">
+                <input name="reviev" placeholder="E-mail">
+                </input>
+              </label>
+            </form>
+          </li>
+          <li>
+            <button class="newsletter-button" type="submit">Zapisz się<svg class="svg-icon-send" width="24px"
+                height="24px">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg></button>
+          </li>
+        </ul>
       </div>
     </div>
 
@@ -392,38 +391,43 @@
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <h3>Zostaw swoje dane w formularzu poniżej</h3>
-      
+
       <form>
         <label class="modal-color">
           Imię
-        <input type="Name" name="Name"/>
-        <svg class="svg-icon-black-person" width="12px" height="12px"><use href="./images/icons.svg#icon-black-person"></use></svg>
-      </label>
+          <input type="Name" name="Name" />
+          <svg class="svg-icon-black-person" width="12px" height="12px">
+            <use href="./images/icons.svg#icon-smartphone"></use>
+          </svg>
+        </label>
         <label class="modal-color">
           Telefon
-        <input type="Telefon" name="Telefon"/>
-        <svg class="svg-icon-tel" width="13px" height="13px"><use href="./images/icons.svg#icon-tel"></use></svg>
-      </label>
+          <input type="Telefon" name="Telefon" />
+          <svg class="svg-icon-tel" width="13px" height="13px">
+            <use href="./images/icons.svg#icon-smartphone"></use>
+          </svg>
+        </label>
         <label class="modal-color svg-mail">
           E-mail
-        <input type="E-mail" name="E-mail"/>
-        <svg class="svg-icon-E-mail" width="15px" height="12px"><use href="./images/icons.svg#icon-mail"></use></svg>
-      </label>
-    
-      <label class="modal-color">
-        Komentarz
-        <textarea class="textarea" name="review" placeholder="Wprowadź text"></textarea>
-      </label>
-      <label class="checkbox">
-      <input
-      type="checkbox"
-      name="RegulaminCheckbox"
-      value="Regulamin i polityka prywatności"
-      nonchecked
-    />
-    <svg class="svg-icon-bird" width="11px" height="8px"><use href="./images/icons.svg#icon-bird"></use></svg>
-    <p>Oświadczam iż akceptuję </p><a class="modal-reg" href="#">Regulamin</a> i <a class="modal-reg" href="#">politykę prywatności</a></label>
-    
+          <input type="E-mail" name="E-mail" />
+          <svg class="svg-icon-E-mail" width="15px" height="12px">
+            <use href="./images/icons.svg#icon-smartphone"></use>
+          </svg>
+        </label>
+
+        <label class="modal-color">
+          Komentarz
+          <textarea class="textarea" name="review" placeholder="Wprowadź text"></textarea>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="RegulaminCheckbox" value="Regulamin i polityka prywatności" nonchecked />
+          <svg class="svg-icon-bird" width="11px" height="8px">
+            <use href="./images/icons.svg#icon-bird"></use>
+          </svg>
+          <p>Oświadczam iż akceptuję </p><a class="modal-reg" href="#">Regulamin</a> i <a class="modal-reg"
+            href="#">politykę prywatności</a>
+        </label>
+
       </form>
       <Button class="button-modal">Wyślij</Button>
       <button class="btn-close" data-modal-close><a>X</a></button>

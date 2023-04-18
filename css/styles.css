@@ -806,6 +806,8 @@ form {
 .svg-icon-black-person{
   fill:#212121;
   position:absolute;
+  width:12px ;
+  height:12px;
 }
 .svg-icon-tel{
   fill:#212121;
@@ -814,6 +816,7 @@ form {
 .svg-icon-Email{
   fill:#212121;
   position:absolute;
+  top:5px;
 }
 .svg-icon-bird{
   fill:#ffffff
