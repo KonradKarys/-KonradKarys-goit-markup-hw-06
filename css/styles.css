@@ -589,8 +589,6 @@ footer {
   display: flex;
 }
 
-
-
 .footer-block2 ul {
   list-style-type: none;
   display: flex;
@@ -693,20 +691,21 @@ address li {
   size: 16px;
   color: #ffffff;
 }
-.svg-icon-send{
-  fill:#ffffff;
+.svg-icon-send {
+  fill: #ffffff;
   width: 24px;
   height: 24px;
   justify-content: center;
   position: absolute;
 }
-.newsletter-block{
+.newsletter-block {
   size: 14px;
   color: #ffffff;
+  padding-top: 12px;
   padding-bottom: 20px;
   padding-left: 40px;
 }
-.newsletter-label input{
+.newsletter-label input {
   width: 358px;
   height: 50px;
   background-color: rgba(47, 48, 58, 1);
@@ -714,11 +713,12 @@ address li {
   font-size: 16px;
   font-weight: 400;
   padding-left: 16px;
+  color: #ffffff;
 }
-.footer-block2{
+.footer-block2 {
   padding-bottom: 20px;
 }
-.newsletter-label{
+.newsletter-label {
   padding-right: 15px;
   padding-bottom: 20px;
 }
@@ -785,7 +785,7 @@ form {
 .modal p {
   padding-left: 40px;
 }
-.modal input{
+input {
   background-color: #ffffff;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -797,57 +797,98 @@ form {
   text-decoration: underline;
   color: #2196f3;
   display: flex;
-  height: 24px;
 }
-.modal-color{
+.modal-color {
   padding: 10px 0 4px 0;
- 
 }
-.svg-icon-black-person{
-  fill:#212121;
-  position:absolute;
-  width:12px ;
-  height:12px;
+.modal input:hover,
+.modal input:focus {
+  border: solid 1px #2196f3;
 }
-.svg-icon-tel{
-  fill:#212121;
-  position:absolute;
+input [type=tel]{
+  border: solid 1px #2196f3;
+  padding: 30px ;
+  margin:30px;
 }
-.svg-icon-Email{
-  fill:#212121;
-  position:absolute;
-  top:5px;
+.svg-icon-person {
+  fill: #212121;
+  position: absolute;
+  top: 117px;
+  left: 50px;
+}
+.svg-icon-person:hover,
+.svg-icon-person:focus {
+  fill: #2196f3;
+}
+.svg-icon-tel {
+  fill: #212121;
+  position: absolute;
+  top: 190px;
+  left: 50px;
+}
+.modal input{
+  padding: 0 30px;
+}
+.svg-icon-tel:hover,
+.svg-icon-tel:focus {
+  fill: #2196f3;
+}
+.svg-icon-Email {
+  fill: #212121;
+  position: absolute;
+  top: 263px;
+  left: 50px;
+}
+.svg-icon-Email:hover,
+.svg-icon-Email:focus {
+  fill: #2196f3;
+}
+.svg-icon-bird:checked +label::before{
+  fill: #ffffff;
+  background-color: #2196f3;
+  width: 18px;
+  height: 18px;
+  top:448px;
+  position: absolute;
+  left:41px ;
 }
 .svg-icon-bird{
-  fill:#ffffff
-}
-.checkbox:checked~.svg-icon-bird{
-  fill: #fff;
-  background-color: #2196f3;
+  position:initial ;
 }
 .checkbox {
   display: flex;
 }
-.modal input:focus 
-.modal input:hover 
-{
-  border: 1px solid #2196f3;
-  fill:#2196f3;
-  transition:250ms cubic-bezier(0.4, 0, 0.2, 1);
+.checkbox::before{
+  display: block;
+  position:absolute ;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 4px;
 }
-.modal textarea:focus 
-.modal textarea:hover 
-{
+.input:checked + input::after{
+ border: 1px solid #2196f3;
+ fill:#2196f3;
+}
+.modal input:focus, .modal input:hover {
   border: 1px solid #2196f3;
-  fill:#2196f3;
+  fill: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal textarea:focus ,.modal textarea:hover {
+  border: 1px solid #2196f3;
+  fill: #2196f3;
 }
 
 label {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  
 }
-.modal textarea{
+
+.modal textarea {
   width: 448px;
   height: 120px;
   resize: none;
@@ -865,3 +906,4 @@ label {
   color: #ffffff;
   size: 16px;
 }
+
