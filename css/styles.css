@@ -687,7 +687,7 @@ address li {
   box-shadow: 0px 4px 4px 0px #00000026;
   border-radius: 4px;
   align-items: center;
-  justify-content: center;
+  padding:0 40px;
   size: 16px;
   color: #ffffff;
 }
@@ -695,8 +695,8 @@ address li {
   fill: #ffffff;
   width: 24px;
   height: 24px;
-  justify-content: center;
   position: absolute;
+  right: 410px;
 }
 .newsletter-block {
   size: 14px;
