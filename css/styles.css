@@ -589,10 +589,6 @@ footer {
   display: flex;
 }
 
-.footer-block2 ul {
-  list-style-type: none;
-  display: flex;
-}
 .blue-font {
   color: #2196f3;
 }
@@ -698,7 +694,7 @@ address li {
   width: 24px;
   height: 24px;
   position: absolute;
-  right: 420px;
+  right: 380px;
 }
 .newsletter-h4 {
   size: 14px;
@@ -725,8 +721,7 @@ address li {
   color: #ffffff;
 }
 .footer-block2 {
-  padding-bottom: 20px;
-  padding-left: 40px;
+  padding-left: 78px;
 }
 .newsletter-label {
   padding-right: 15px;
