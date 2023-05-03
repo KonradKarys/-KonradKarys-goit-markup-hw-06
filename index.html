@@ -129,26 +129,26 @@
     <section class="section">
       <div class="container">
         <h2 class="h2">Czym się zajmujemy</h2>
-        <ul class="portfolio card-index">
-          <span class="thumb">
-            <li class="item">
+        <div class="portfolio card-index">
+          <div class="thumb">
+            <div class="item">
               <img src="images/index-picture/img.jpg" alt="computer" width="350" height="300" />
-            </li>
+            </div>
             <p class="label">APLIKACJE KOMPUTEROWE</p>
-          </span>
-          <span class="thumb">
-            <li class="item">
+          </div>
+          <div class="thumb">
+            <div class="item">
               <img src="images/index-picture/img3.jpg" alt="mobile" width="350" height="300" />
-            </li>
+            </div>
             <p class="label">APLIKACJE MOBILNE</p>
-          </span>
-          <span class="thumb">
-            <li class="item">
+          </div>
+          <div class="thumb">
+            <div class="item">
               <img src="images/index-picture/img1.jpg" alt="tablet" width="350" height="300" />
-            </li>
+            </div>
             <p class="label">ROZWIĄZANIA GRAFICZNE</p>
-          </span>
-        </ul>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -158,8 +158,8 @@
       <div class="container">
         <h2 class="h2">Nasz zespół</h2>
         <ul class="card-index">
-          <div class="tile">
-            <li>
+          <li class="tile">
+            <div>
               <img src="images/index-picture/Franek.jpg" alt="John_Doe3" width="270" height="260" />
               <h3>John Doe</h3>
               <p>Product Designer</p>
@@ -179,10 +179,10 @@
                   </svg>
                 </a>
               </div>
-            </li>
-          </div>
-          <div class="tile">
-            <li>
+            </div>
+          </li>
+          <li class="tile">
+            <div>
               <img src="images/index-picture/Iwona.jpg" alt="John_Doe2" width="270" height="260" />
               <h3>John Doe</h3>
               <p>Frontend Developer</p>
@@ -200,10 +200,11 @@
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
-            </li>
-          </div>
-          <div class="tile">
-            <li>
+              </div>
+            </div>
+          </li>
+          <li class="tile">
+            <div>
               <img src="images/index-picture/Janek.jpg" alt="John_Doe3" width="270" height="260" />
               <h3>John Doe</h3>
               <p>Marketing</p>
@@ -228,19 +229,15 @@
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
-
-
               </div>
-            </li>
-          </div>
-          <div class="tile">
-            <li>
+            </div>
+          </li>
+          <li class="tile">
+            <div>
               <img src="images/index-picture/Stefan.jpg" alt="John_Doe4" width="270" height="260" />
               <h3>John Doe</h3>
               <p>UI Designer</p>
               <div class="team-svg">
-
-
                 <a class="background-team-svg" href="#"><svg class="team-svg-icon" width="20px" height="20px">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg></a>
@@ -259,11 +256,9 @@
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
-
-
               </div>
-            </li>
-          </div>
+            </div>
+          </li>
         </ul>
       </div>
     </section>
@@ -271,49 +266,49 @@
     <section>
       <div class="container">
         <h2 class="h2">Nasi Klienci</h2>
-        <ul class="us-clients">
+        <ul class="us-clients"><li>
           <a class="clients" href="#">
-            <li>
+          
               <svg class="item-client" width="106px" height="60px">
                 <use href="./images/icons.svg#icon-ya-co"></use>
               </svg>
-            </li>
-          </a>
+            
+          </a></li><li>
           <a class="clients" href="#">
-            <li>
+          
               <svg class="item-client" width="106px" height="60px">
                 <use href="./images/icons.svg#icon-tag-line-here"></use>
               </svg>
-            </li>
-          </a>
+            
+          </a></li><li>
           <a class="clients" href="#">
-            <li>
+          
               <svg class="item-client" width="106px" height="60px">
                 <use href="./images/icons.svg#icon-company"></use>
               </svg>
-            </li>
-          </a>
+            
+          </a></li><li>
           <a class="clients" href="#">
-            <li>
+          
               <svg class="item-client" width="106px" height="60px">
                 <use href="./images/icons.svg#icon-foster-peters"></use>
               </svg>
-            </li>
-          </a>
+            
+          </a></li><li>
           <a class="clients" href="#">
-            <li>
+          
               <svg class="item-client" width="106px" height="60px">
                 <use href="./images/icons.svg#icon-brand"></use>
               </svg>
-            </li>
-          </a>
+            
+          </a></li><li>
           <a class="clients" href="#">
-            <li>
+          
               <svg class="item-client" width="106px" height="60px">
                 <use href="./images/icons.svg#icon-company-tag-line"></use>
               </svg>
-            </li>
-          </a>
+            
+          </a></li>
         </ul>
       </div>
     </section>
@@ -386,6 +381,7 @@
   </footer>
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
+      <button class="btn-close" data-modal-close>X</button>
       <h3>Zostaw swoje dane w formularzu poniżej</h3>
 
       <form>
@@ -425,11 +421,11 @@
             <p>Oświadczam iż akceptuję <a class="modal-reg" href="#">Regulamin</a> i <a class="modal-reg"
             href="#">politykę prywatności</a></p>
         </label>
-      </div>
+      
       <button class="button-modal">Wyślij</button>
       </form>
       
-      <button class="btn-close" data-modal-close>X</button>
+      
     </div>
   </div>
 
