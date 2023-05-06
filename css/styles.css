@@ -822,7 +822,6 @@ address li {
   height: 40px;
 }
 .checkbox input {
-  display: flex;
   background-color: #ffffff;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -927,12 +926,15 @@ label {
 }
 .modal-accept {
   width: 16px;
-  height: 16px;
+  height: 15px;
+  margin-right: 8px;
   position: relative;
   border: 2px solid #212121;
   border-radius: 3px;
 }
-
+.modal-check{
+  display: flex;
+}
 .modal-accept input {
   position: absolute;
   z-index: 200;
